@@ -19,9 +19,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-
-
-    
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +38,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://elli-elka.github.io/gmt-calculator-react-app"
-
+  "homepage": "https://elli-elka.github.io/gmt-calculator-react-app",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
