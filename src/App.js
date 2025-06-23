@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <div style={{ padding: '25rem', fontFamily: 'Arial' }}>
+    <div style={{ padding: '2rem', fontFamily: 'Arial' }}>
       <h1>GMT % Calculator</h1>
       <form onSubmit={handleSubmit}>
       <div>
