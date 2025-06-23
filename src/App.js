@@ -30,6 +30,7 @@ function App() {
     <div style={{ padding: '2rem', fontFamily: 'Arial' }}>
       <h1>GMT % Calculator</h1>
       <form onSubmit={handleSubmit}>
+<<<<<<< HEAD
       <div>
       <label>Gold time (mm:ss.ms): </label>
       <input value={goldTime} onChange={(e) => setGoldTime(e.target.value)} />
@@ -39,6 +40,17 @@ function App() {
         <input value={currentTime} onChange={(e) => setCurrentTime(e.target.value)} />
       </div>
       <button type="submit" style={{ marginTop: '1rem' }}>Calculate</button>
+=======
+        <div>
+          <label>Your time (mm:ss.ms): </label>
+          <input value={currentTime} onChange={(e) => setCurrentTime(e.target.value)} />
+        </div>
+        <div>
+          <label>Gold time (mm:ss.ms): </label>
+          <input value={goldTime} onChange={(e) => setGoldTime(e.target.value)} />
+        </div>
+        <button type="submit" style={{ marginTop: '1rem', color:white }}>Calculate</button>
+>>>>>>> 9e95bd84a74a91530b759ac66086481a19cd07df
       </form>
       {result && (
         <p><strong>Result:</strong> {result}%</p>
