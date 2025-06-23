@@ -38,7 +38,7 @@ function App() {
           <label>Gold time (mm:ss.ms): </label>
           <input value={goldTime} onChange={(e) => setGoldTime(e.target.value)} />
         </div>
-        <button type="submit" style={{ marginTop: '1rem' }}>Calculate</button>
+        <button type="submit" style={{ marginTop: '1rem', color:white }}>Calculate</button>
       </form>
       {result && (
         <p><strong>Result:</strong> {result}%</p>
