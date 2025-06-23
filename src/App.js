@@ -8,7 +8,7 @@ function timeToSeconds(timeStr) {
 function calculateGMT(current, gold) {
   const currentSec = timeToSeconds(current);
   const goldSec = timeToSeconds(gold);
-  return ((goldSec / currentSec) * 60).toFixed(2);
+  return ((goldSec / currentSec) * 100).toFixed(2);
 }
 
 function App() {
