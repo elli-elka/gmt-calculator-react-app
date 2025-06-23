@@ -27,18 +27,18 @@ function App() {
   };
 
   return (
-    <div style={{ padding: '2rem', fontFamily: 'Arial' }}>
+    <div style={{ padding: '25rem', fontFamily: 'Arial' }}>
       <h1>GMT % Calculator</h1>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>Your time (mm:ss.ms): </label>
-          <input value={currentTime} onChange={(e) => setCurrentTime(e.target.value)} />
-        </div>
-        <div>
-          <label>Gold time (mm:ss.ms): </label>
-          <input value={goldTime} onChange={(e) => setGoldTime(e.target.value)} />
-        </div>
-        <button type="submit" style={{ marginTop: '1rem' }}>Calculate</button>
+      <div>
+      <label>Gold time (mm:ss.ms): </label>
+      <input value={goldTime} onChange={(e) => setGoldTime(e.target.value)} />
+      </div>
+      <div>
+        <label>Your time (mm:ss.ms): </label>
+        <input value={currentTime} onChange={(e) => setCurrentTime(e.target.value)} />
+      </div>
+      <button type="submit" style={{ marginTop: '1rem' }}>Calculate</button>
       </form>
       {result && (
         <p><strong>Result:</strong> {result}%</p>
